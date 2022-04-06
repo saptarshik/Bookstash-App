@@ -1,0 +1,34 @@
+<%- include("./userindex") %>
+
+<p class="float-left mr-3 my-1">
+  <a class="btn btn-outline-dark" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+    aria-controls="collapseExample">
+    <strong><i class='fas fa-folder-plus'></i></strong>
+  </a>
+</p>
+<h1 class="card-title text-monospace">
+  New Category
+</h1>
+<div class="card mb-3 mr-5">
+  <form action="/users/<%=user._id%>/category" method="POST">
+    <div class="card-body">
+      <div class="form-group">
+        <input class="form-control" type="text" name="name" placeholder="name">
+      </div>
+    </div>
+    <div class="card-footer" id="collapseExample2">
+      <div class="form-group">
+        <textarea class="form-control" rows="3" name="description" placeholder="Category Description"
+          aria-describedby="optional"></textarea>
+        <small id="optional" class="form-text text-muted">Optional</small>
+      </div>
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </div>
+  </form>
+  <!-- <p class="card-text text-right">Footer Text - Possible Link Out</p> -->
+
+</div>
+</div>
+</div>
+</div>
+<%- include("../partials/footer") %>

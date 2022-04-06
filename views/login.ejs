@@ -1,0 +1,81 @@
+<%- include("./partials/head") %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 my-5 d-flex flex-column justify-content-center">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1><i class="fa fa-bookmark-o mr-2"></i>BookStash</h1>
+                    <!-- form card login -->
+                    <div class="card rounded shadow shadow-sm my-5">
+                        <div class="card-header">
+                            <h3 class="mb-0">Login to your Account</i></h3>
+                        </div>
+                        <div class="card-body">
+                            <form class="form" role="form" id="formLogin" action="/login" method="post">
+                                <div class="form-group">
+                                    <label for="uname1">Username</label>
+                                    <input type="text" class="form-control form-control-lg rounded-0" name="username"
+                                        id="uname1" required>
+                                    <div class="invalid-feedback">Oops, you missed this one.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control form-control-lg rounded-0" id="pwd1"
+                                        required name="password">
+                                    <div class="invalid-feedback">Enter your password too!</div>
+                                </div>
+                                <div>
+                                    <label>
+                                        <span class="custom-control-description small text-dark">Forgot your password?
+                                            <a href="#">Reset here.</a></span>
+                                    </label>
+                                </div>
+                                <button type="submit"
+                                    class="btn btn-outline-success font-weight-bold btn-lg center mt-2 mb-1"
+                                    id="btnLogin">LOGIN</button>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+                            <p class="my-2">Don't have an account? <a href="/register"
+                                    class="btn btn-xs btn-outline-secondary font-weight-bold  ml-1 mb-1">
+                                    REGISTER</a>
+                            </p>
+                        </div>
+                        <!--/card-block-->
+                    </div>
+                    <!-- /form card login -->
+
+                </div>
+
+
+            </div>
+            <!--/row-->
+
+        </div>
+        <!--/col-->
+    </div>
+    <!--/row-->
+</div>
+<!-- <div class="container">
+    <div class="row">
+        <h1 style="text-align: center">Login</h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/login" method="post">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="username" placeholder="username">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" name="password" placeholder="password">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Login</button>
+                </div>
+            </form>
+            <a href="/">Go Back</a>
+        </div>
+    </div>
+</div> -->
+
+
+<%- include("./partials/footer") %>

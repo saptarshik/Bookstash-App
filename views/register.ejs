@@ -1,0 +1,101 @@
+<%- include("./partials/head") %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 my-5 d-flex flex-column justify-content-center">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1><i class="fa fa-bookmark-o mr-2"></i>BookStash</h1>
+                    <!-- form card login -->
+                    <div class="card rounded shadow shadow-sm my-5">
+                        <div class="card-header">
+                            <h3 class="mb-0">Register</i></h3>
+                        </div>
+                        <div class="card-body">
+                            <form class="form" role="form" id="formRegister" action="/register" method="post">
+                                <div class="form-group">
+                                    <label for="uname">Username</label>
+                                    <input type="text" class="form-control form-control-lg rounded-0" name="username"
+                                        id="uname" required>
+                                    <div class="invalid-feedback">Oops, you missed this one.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control form-control-lg rounded-0" id="email"
+                                        required name="email">
+                                    <div class="invalid-feedback">Enter your password too!</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Password</label>
+                                    <input type="password" class="form-control form-control-lg rounded-0" id="pwd"
+                                        required name="password">
+                                    <div class="invalid-feedback">Enter your password too!</div>
+                                </div>
+                                <button type="submit"
+                                    class="btn btn-outline-success font-weight-bold btn-lg center mt-2 mb-1"
+                                    id="btnRegister">Create
+                                    Your Account Now!</button>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+                            <p class="my-2">Already have an account? <a href="/login"
+                                    class="btn btn-xs btn-outline-secondary font-weight-bold  ml-1 mb-1">
+                                    Login</a>
+                            </p>
+                        </div>
+                        <!--/card-block-->
+                    </div>
+                    <!-- /form card login -->
+
+                </div>
+
+
+            </div>
+            <!--/row-->
+
+        </div>
+        <!--/col-->
+    </div>
+    <!--/row-->
+</div>
+<!--/container-->
+<!-- <div class="container my-5">
+
+    <form action="/register" method="post">
+        <div class="form-group">
+            <h1 class="my-5 font-weight-bold">Register</h1>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input class="form-control" id="inputEmail" type="email" name="username" placeholder="Email" required
+                autofocus>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input class="form-control" id="inputPassword" type="password" name="password" placeholder="Password">
+        </div> -->
+<!--  <div class="form-group">
+                    <input class="form-control" type="text" name="firstName" placeholder="first name">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="lastName" placeholder="last name">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="email" name="email" placeholder="email">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="avatar" placeholder="avatar image url">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="adminCode" placeholder="Admin code">
+                </div>-->
+<!--         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up!</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+    </form>
+    <p>Have an account? <a href="/" class="btn btn-xs btn-secondary"> Login.</a></p>
+
+</div> -->
+
+
+
+
+
+<%- include("./partials/footer") %>

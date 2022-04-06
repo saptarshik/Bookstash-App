@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.bg-card {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://images.unsplash.com/photo-1544840280-80e54213dfdc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+    text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.good-review-score {
+    background-color: #292b2c;
+    color: white;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    margin-right: 0.5rem;
+    border-radius: 15%;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background: #334d50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cbcaa5, #334d50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cbcaa5, #334d50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+/*width: 50px;
+    height: 30px; 
+    line-height: 30px*/

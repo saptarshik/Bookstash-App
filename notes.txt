@@ -1,0 +1,63 @@
+
+<!-- <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <% bookmarks.forEach(function(bookmark){ %>
+            <div id="accordion">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <%=bookmark.name%>
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          ->
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <%=bookmark.description%>
+                    </div>
+                  </div>
+                </div>
+          <% }); %>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        New Category 
+                        </button>
+                    </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <form action="/bookmarks" method ="POST">
+                            <input type="text" name="name" placeholder="name">
+                            <input type="text-area" name="description" placeholder="description">
+                            <button>Submit</button>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            col
+        </div>
+    </div>
+  </div> -->
+<!-- 
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-4">
+      
+          </div>
+        
+          <div class="col-md-4">
+           column
+        </div>
+      </div>
+     
+    </div> -->

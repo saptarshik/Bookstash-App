@@ -1,0 +1,34 @@
+<%- include("../partials/head") %>
+
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>profile</h1>
+                <h2><a href="users/<%=user._id%>/category" class="btn btn-large btn-outline-light">Go to your
+                        Library!</a>
+                </h2>
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quasi similique architecto ad modi sunt
+                quaerat
+                possimus, officiis quos. Voluptatibus repellendus exercitationem, id saepe sunt consectetur non quam
+                sapiente
+                assumenda.
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quasi similique architecto ad modi sunt
+                quaerat
+                possimus, officiis quos. Voluptatibus repellendus exercitationem, id saepe sunt consectetur non quam
+                sapiente
+                assumenda.
+        </div>
+        <div class="col-md-8">
+            <h2 class="ml-5"><%= user.username %>'s Account Information</h2>
+            <div class="thumbnail ml-5">
+                <!-- <img src="<%= user.avatar %>" alt="user profile image"> -->
+                <div class="caption">Email: <a href="mailto:<%= user.email %>"><%= user.email %></a></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<%- include("../partials/footer") %>

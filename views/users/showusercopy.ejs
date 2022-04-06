@@ -1,0 +1,78 @@
+<%- include("./userindex") %>
+
+<h1><%=category.name%></h1>
+<!--    <% let counter = 0 %>
+        <% category.bookmarks.forEach(function(book){ %>
+        <% counter +=1 %>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h4 class="card-title"><%=book.name%></h4>
+            <p class="card-text"><%=book.description%></p>
+          </div>
+        </div> -->
+<!-- <% if (book._id === bookmark._id) { %> -->
+
+<!--  <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#coll<%=counter%>"
+              aria-expanded="false" aria-controls="coll<%=counter%>">
+              <i class="fas fa-pen-square"></i>
+            </button> -->
+<h1 class="text-monospace"><%=bookmark.name%></h1>
+
+<form class="delete-form" action="/users/<%=user._id %>/category/<%=category._id %>/<%=bookmark._id %>?_method=DELETE"
+  method="POST">
+  <button class="btn btn-danger" type="button">
+    <i class="fas fa-remove"></i>
+  </button>
+</form>
+<!-- <a class="btn btn-secondary card-text text-right" href="#"><i class="fas fa-angle-double-right"></i></a>
+            <a href="<%=category.url%>" class="ml-2"><%=book.url%></a> -->
+
+
+<!-- <div class="cardbody collapse" id="coll<%=counter%>"> -->
+<form action="/users/<%=user._id%>/category/<%=category._id%>/<%=bookmark._id %>?_method=PUT" method="POST">
+  <div class="form-group">
+    <input class="form-control" type="text" name="bookmark[name]" value="<%= bookmark.name %>" required>
+  </div>
+  <div class="form-group">
+    <input class="form-control" type="text" name="bookmark[url]" value="<%= bookmark.url %>" required>
+  </div>
+  <div class="form-group">
+    <textarea class="form-control" rows="10" name="bookmark[description]" aria-describedby="optional">
+                    <%= book.description %>
+                  </textarea>
+    <small id="optional" class="form-text text-muted">Optional</small>
+  </div>
+  <button type="submit" class="btn btn-dark">Submit</button>
+
+</form>
+
+<!-- </div> -->
+<!--  <% } else { %>
+        <div></div>
+        <% } %>
+        <% }) %> -->
+
+<!-- <div class="card my-3">
+          <div class="card-body">
+            <h1 class="card-text good-review-score float-left"></h1>
+            <h4 class="card-title">New Bookmark</h4>
+            <form id="collapseExample2" action="/users/<%=user._id%>/category/<%=category._id%>" method="POST">
+              <div class="form-group">
+                <input class="form-control" type="text" name="bookmark[name]" placeholder="name">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="bookmark[url]" placeholder="url">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" type="text" name="bookmark[description]" placeholder="description"
+                  rows="4"></textarea>
+              </div>
+              <button class="btn btn-dark" type="submit">Submit</button>
+            </form>
+          </div>
+        </div> -->
+</div>
+</div>
+</div>
+</div>
+<%- include("../partials/footer") %>

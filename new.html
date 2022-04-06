@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/505ec83a11.js" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <title>My Webpage</title>
+</head>
+
+<body>
+    <ul class="nav">
+        <li class="nav-item">
+            <h2><a class="nav-link" href="./page1.html">Link</a></h2>
+        </li>
+        <li class="nav-item">
+            <h3><a class="nav-link" href="./page2.html">Link</a></h3>
+        </li>
+        <li class="nav-item">
+            <h4><a class="nav-link" href="./page3.html">Link</a></h4>
+        </li>
+    </ul>
+    <div class="center container">
+        <p class="title">WELCOME</p>
+        <div class="clo"></div>
+        <span class="dot">
+            <span class="clock1 clock">
+                <div><i class="fas fa-university"></i></p>
+            </span>
+            <span class="clock2 clock">
+                <p><i class="far fa-building"></i></p>
+            </span>
+            <span class="clock3 clock">
+                <p><i class="fas fa-heartbeat"></i></p>
+            </span>
+            <span class="clock4 clock">
+                <p><i class="fas fa-laptop-house"></i></p>
+            </span>
+            <span class="clock5 cloc">
+                <p><a href="https://www.wordpress.com/"><i class="fas fa-blog"></i></a></p>
+            </span>
+            <span class="clock6 cloc">
+                <p><a href="https://www.office.com/"><i class="fas fa-envelope"></i></a></p>
+            </span>
+            <span class="clock7 cloc">
+                <p><a href="https://www.spotify.com/ca-en/"><i class="fas fa-headphones"></i></a></p>
+            </span>
+            <span class="clock8 cloc">
+                <p><a href="https://www.theweathernetwork.com/ca/weather/ontario/toronto"><i
+                            class="fas fa-cloud-sun"></i></a></p>
+            </span>
+            <span class="clock9 cloc">
+                <p><a href="https://todoist.com/"><i class="fas fa-tasks"></i></a></p>
+            </span>
+            <span class="clock10 cloc">
+                <p><a href="https://www.headspace.com/"><i class="fas fa-spa"></i></a></p>
+            </span>
+            <span class="clock11 cloc">
+                <p><a href="https://www.goodreads.com/"><i class="fas fa-book-open"></i></a></p>
+            </span>
+            <span class="clock12 cloc">
+                <p><a href="https://https://www.torontopubliclibrary.ca/"><i class="fas fa-book"></i></a></p>
+            </span>
+        </span>
+    </div>
+    <div class="small">
+        <p class="title text-light">WELCOME</p>
+        <div class="clo" class="text-light"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <span class="clocs">
+                        <p><i class="fas fa-university"></i></p>
+                    </span>
+                </div>
+                <div class="col">
+                    <span class="clocs">
+                        <p><i class="far fa-building"></i></p>
+                    </span>
+                </div>
+                <div class="col">
+                    <span class="clocs">
+                        <p><i class="fas fa-heartbeat"></i></p>
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span class="clocs">
+                        <p><i class="fas fa-laptop-house"></i></p>
+                    </span>
+                </div>
+                <div class="col">
+                    <span class="clocs">
+                        <p><a href="https://www.wordpress.com/"><i class="fas fa-blog"></i></a></p>
+                    </span>
+                </div>
+                <div class="col">
+                    <span class="clocs">
+                        <p><a href="https://www.office.com/"><i class="fas fa-envelope"></i></a></p>
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span class="clocs">
+                        <p><a href="https://www.spotify.com/ca-en/"><i class="fas fa-headphones"></i></a></p>
+                    </span>
+                </div>
+                <div class="col">
+                    <span class="clocs">
+                        <p><a href="https://www.theweathernetwork.com/ca/weather/ontario/toronto"><i
+                                    class="fas fa-cloud-sun"></i></a></p>
+                    </span>
+                </div>
+                <div class="col">
+                    <span class="clocs">
+                        <p><a href="https://todoist.com/"><i class="fas fa-tasks"></i></a></p>
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span class="clocs">
+                        <p><a href="https://www.headspace.com/"><i class="fas fa-spa"></i></a></p>
+                    </span>
+                </div>
+                <div class="col">
+                    <span class="clocs">
+                        <p><a href="https://www.goodreads.com/"><i class="fas fa-book-open"></i></a></p>
+                    </span>
+                </div>
+                <div class="col">
+                    <span class="clocs">
+                        <p><a href="https://https://www.torontopubliclibrary.ca/"><i class="fas fa-book"></i></a></p>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function currentTime() {
+            var date = new Date(); /* creating object of Date class */
+            var hour = date.getHours();
+            var min = date.getMinutes();
+            var sec = date.getSeconds();
+            var midday = "AM";
+            midday = (hour >= 12) ? "PM" : "AM"; /* assigning AM/PM */
+            hour = (hour == 0) ? 12 : ((hour > 12) ? (hour - 12) : hour); /* assigning hour in 12-hour format */
+            hour = updateTime(hour);
+            min = updateTime(min);
+            sec = updateTime(sec);
+            document.getElementById("clo").innerText = hour + " : " + min + " : " + sec + " " +
+            midday; /* adding time to the div */
+            var t = setTimeout(currentTime, 1000); /* setting timer */
+        }
+
+        function updateTime(k) {
+            /* appending 0 before time elements if less than 10 */
+            if (k < 10) {
+                return "0" + k;
+            } else {
+                return k;
+            }
+        }
+
+        currentTime();
+    </script>
+</body>
+
+</html>

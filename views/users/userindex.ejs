@@ -1,0 +1,89 @@
+<%- include("../partials/head") %>
+
+<div class="container-fluid">
+  <ul class="nav nav-pills ml-5">
+    <li class="nav-item mr-2 text-monospace">
+      <a href="/users/<%=user._id%>/category" class="text-dark">
+        <h2 class="mt-3">BookShelves</h2>
+    </li>
+    <!--  <li class="nav-item mr-2">
+          <a class="nav-link active" href="#"> <i class="fas fa-home"></i>
+          </a>
+        </li> -->
+    <li class="nav-item mr-2">
+      <a class="btn btn-primary mt-3" href="/users/<%=user._id%>/category/new" role="button">
+        <strong><i class='fas fa-plus'></i></strong>
+      </a>
+    </li>
+    <li class="nav-item mt-3 mr-auto">
+      <button class="btn btn-success my-2 mr-2 my-sm-0" data-toggle="collapse" href="#sidebar" role="button"
+        aria-expanded="false" aria-controls="collapseExample"><strong><i
+            class='fas fa-align-justify'></i></strong></button></h1>
+    </li>
+    <li class="nav-item">
+      <form class="mb-3 mr-5 form-inline py-3 text-monospace" action="/users/<%=user._id%>/category" method="get">
+        <input class="form-control mr-sm-2" style="width: 31rem;" name="search" type="search" placeholder="Search"
+          aria-label="Search">
+        <button class="btn btn-success my-2 my-sm-0" type="submit" value="Search"><i class="fas fa-search"></i></button>
+      </form>
+
+    </li>
+  </ul>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <!--  <p class="float-left mr-2">
+          
+        </p> -->
+
+
+      <!-- <h1 class="text-monospace my-4 ml-3">BookShelves</h1> -->
+      <% let counterfor = 0 %>
+      <% categories.forEach(function(category){ %>
+      <% counterfor = counterfor + 1 %>
+      <div class="card mt-1 mb-1 ml-5 mr-2" id="sidebar">
+        <div class="card-body bg-card">
+          <h4 class="card-title mt-1 mr-auto font-weight-bold"><a class="white"
+              href="/users/<%=user._id%>/category/<%= category._id %>"><i
+                class="btn btn-outline-dark fas fa-folder mb-1 mr-2"></i></a><%=category.name%>
+            <a class="ml-2 text-dark" data-toggle="collapse" data-target=".multi-collapse<%=counterfor%>"
+              aria-expanded="false" aria-controls="information<%=counterfor%> footerportion<%=counterfor%>"><i
+                class="fas fa-angle-down"></i></a>
+          </h4>
+          <p class="card-text mt-2 my-2 collapse multi-collapse<%=counterfor%>" id="information<%=counterfor%>">
+            <%=category.description%>
+          </p>
+        </div>
+        <div class="card-footer collapse multi-collapse<%=counterfor%> bg-dark" id="footerportion<%=counterfor%>">
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <% if(currentUser) { %>
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+              <a type="button" class="btn btn-xs btn-warning"
+                href="/users/<%=user._id%>/category/<%=category._id%>/edit"><i class="fas fa-pen-square mr-1"></i>
+                <strong>EDIT</strong></a>
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="Second group">
+              <form class="delete-form" action="/users/<%=user._id %>/category/<%=category._id %>/?_method=DELETE"
+                method="POST">
+                <button class="btn btn-xs btn-danger"><i class="fa fa-remove"></i></button>
+              </form>
+              <% } %>
+            </div>
+            <div class="btn-group" role="group" aria-label="Third group">
+              <button type="button" class="btn btn-info btn-xs">
+                <a class="white" href="/users/<%=user._id%>/category/<%= category._id %>"><i
+                    class="fas fa-angle-double-right"></i></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% }); %>
+
+    </div>
+
+    <div class="col-md-8">

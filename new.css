@@ -1,0 +1,191 @@
+body {
+    background-color: #4a4e69;
+    font-size: 16px;
+}
+
+.small {
+    display: none;
+}
+
+.center p,
+.dot {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+p span {
+    position: relative;
+    z-index: 1;
+}
+
+.clock p i {
+    position: relative;
+    color: #C0C0C0;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    font-size: 5em;
+
+}
+
+.cloc p i {
+    position: relative;
+    color: #4a4e69;
+    text-shadow: 0px 0px 5px #C0C0C0;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+a:hover {
+    background-color: gold;
+}
+
+
+.title {
+    font-size: 5em;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: #22223B;
+    z-index: 1;
+}
+
+div .clo {
+    font-family: "Lucida Console", Monaco, monospace;
+    color: #22223b;
+    font-size: 3em;
+    font-weight: lighter;
+    text-align: center;
+    position: relative;
+    padding-top: 11em;
+    z-index: 1;
+}
+
+.dot {
+    height: 50em;
+    width: 50em;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+.clock {
+    height: 10em;
+    width: 10em;
+    background-color: #9A8C98;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.cloc {
+    height: 7em;
+    width: 7em;
+    background-color: #C9ADA7;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+}
+
+.clock1 {
+    top: -8%;
+    left: 40%;
+    right: 50%;
+}
+
+.clock2 {
+    top: 40%;
+    left: -25%;
+}
+
+.clock3 {
+    top: 40%;
+    right: -45%;
+}
+
+.clock4 {
+    top: 88%;
+    left: -20%;
+}
+
+.clock5 {
+    top: -5%;
+    left: -15%;
+}
+
+.clock6 {
+    top: 0;
+    left: 85%;
+}
+
+.clock7 {
+    top: -20%;
+    left: 3%;
+}
+
+.clock8 {
+    top: 63%;
+    left: 40%;
+}
+
+
+.clock9 {
+    top: 45%;
+    left: 45%;
+}
+
+.clock10 {
+    top: 45%;
+    right: 58%;
+}
+
+.clock11 {
+    top: -10;
+    right: 75%;
+}
+
+.clock12 {
+    top: 50%;
+    left: 19%;
+}
+
+
+@media (max-width: 994px) {
+
+    .dot {
+        display: none;
+    }
+
+    .small {
+        visibility: visible;
+        position: absolute;
+        color: #C9ADA7;
+        ;
+        z-index: 1000;
+    }
+
+
+    .small .clocs {
+        height: 10em;
+        width: 10em;
+        background-color: #C9ADA7;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        font-size: 1em;
+        z-index: 1000;
+    }
+
+
+    .small .clocs p i {
+        position: absolute;
+        color: #4a4e69;
+        text-shadow: 0px 0px 5px #C0C0C0;
+        font-size: 2em;
+        font-weight: bolder;
+        z-index: 1000;
+    }
+
+}
